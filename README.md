@@ -27,7 +27,7 @@ git subrepo clone git+https://github.com/hmusgrave/lns.git [optional-subdir]
 const l16 = @import("lns.zig").l16;
 
 test "something" {
-    // 7 decimal bits
+    // 7 decimal bits in the i15 fixed-point log representation
     const l16_7 = l16(7);
 
     const one = l16_7.from(1.0);
